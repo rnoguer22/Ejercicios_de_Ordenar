@@ -18,7 +18,7 @@ class Dicotonomia:
             #Aplicamos recursividad para resolver el ejercicio
             self.ordenar()
         else:
-            if self.n not in self.tabla:
+            if self.n in self.tabla == False:
                 #Si self.n no esta en la tabla, vamos incrementando en 1 hasta que este en "tabla"
                 self.n += 1
                 self.ordenar()
