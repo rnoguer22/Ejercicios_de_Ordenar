@@ -20,10 +20,13 @@ class Dicotonomia:
                 self.contador += 1
                 self.ordenar()
             elif self.contador == len(self.tabla):
+                print (self.r)
                 return self.r
 
 if __name__ == "__main__":
 
     tabla = [4,2,6,3,8,7,5,9,1,0]
+    print (tabla)
     resultado = Dicotonomia(tabla)
-    print ("La tabla ordenada por dicotonomia es: {}".format(resultado.ordenar()))
+    print ("La tabla ordenada por dicotonomia es:")
+    resultado.ordenar()
