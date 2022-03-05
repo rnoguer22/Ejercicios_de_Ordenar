@@ -1,31 +1,24 @@
 class Lista:
-    def __init__(self, lista, i):
+    #Definimos el constructor
+    def __init__(self, lista):
         self.lista = lista
-        self.i = 0
-        self.j = 0
     
+    #Este ejercicio se puede solucionar facilmente con un algoritmo de burbuja
     def ordenacion_burbuja(self):
-
-        def recorrer_lista_2(j):
-            if j == (len(self.lista)-1):
-                recorrer_lista(self.i+1)
-            else:
+        #Bucle para recorrer la lista
+        for i in range(len(self.lista)-1):
+            #Bucle para recorrer todos los elementos de la lista
+            for j in range(len(self.lista)-1):
+                #Si el elemento de la lista es mayor que el que esta a su derecha
                 if self.lista[j] > self.lista[j+1]:
                 #Intercambiamos los elementos de la lista mediante una asignacion multiple
                     self.lista[j], self.lista[j+1] = self.lista[j+1], self.lista[j]
-                    print (self.lista)
-            recorrer_lista_2(j+1)
-
-        def recorrer_lista(i):
-            if i == len(self.lista)-1:
-                return self.lista
-            else:
-                recorrer_lista_2(self.j+i)
-        
-        recorrer_lista(self.i)
+        return self.lista
 
 if __name__ == "__main__":
     
-    vector = [5,7,3,-4,8,12,9,2,14]
-    resultado = Lista(vector, 0)
+    vector = [5,7,3,-4,8,12,9,2,8]
+    #Definimos vector como una instancia de la clase Lista
+    resultado = Lista(vector)
+    #Mostramos el resultado por pantalla
     print (resultado.ordenacion_burbuja())
