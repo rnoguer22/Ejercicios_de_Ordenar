@@ -1,5 +1,3 @@
-lista = [5,7,3,-4,8,12,9,2,8]
-
 class Lista:
     def __init__(self, lista):
         self.lista = lista
@@ -12,4 +10,8 @@ class Lista:
                     self.lista[j], self.lista[j+1] = self.lista[j+1], self.lista[j]
         return self.lista
 
-print(lista)
+if __name__ == "__main__":
+    
+    vector = [5,7,3,-4,8,12,9,2,8]
+    resultado = Lista(vector)
+    print (resultado.ordneacion_burbuja())
