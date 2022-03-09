@@ -25,8 +25,11 @@ def segmentos(tabla):
             pass
 
 def explorar(segmento):
+    #Hacemos copia de seguidad del maximo del segmento, tal y como nos dice el enunciado
     mi = segmento[0]
+    #Desplazamos los elementos a la izquierda, concatenando dos sublistas de segmento
     segmento = segmento[1:] + segmento[:1]
+    #Devolvemos el segmento ordenado
     return segmento
 
 print (segmentos(vector))
