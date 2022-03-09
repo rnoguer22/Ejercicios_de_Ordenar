@@ -26,8 +26,12 @@ def segmentos(tabla):
 
 def explorar(segmento):
     mi = segmento[0]
-    for i in segmento:
-        segmento[i] = segmento[i-1]
-    return (segmento)
+    segmento = segmento[1:] + segmento[:1]
+    return segmento
 
 print (segmentos(vector))
+segmento_1, segmento_2 = segmentos(vector)[0], segmentos(vector)[1]
+print(segmento_1)
+print(segmento_2)
+
+print(explorar(segmento_1))
