@@ -5,4 +5,7 @@ def pedir_datos():
             numero == int(numero)
             return numero   
         except:
+            print ("Introduzca un numero entero, por favor")
             pass
+
+if __name__ == "__main__":
