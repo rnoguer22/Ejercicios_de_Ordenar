@@ -12,6 +12,7 @@ class Lista:
                 #Si el elemento de la lista es mayor que el que esta a su derecha
                 if self.lista[j] > self.lista[j+1]:
                 #Intercambiamos los elementos de la lista mediante una asignacion multiple
+                    print ("Intercambiando {} con {}...".format(self.lista[j], self.lista[j+1]))
                     self.lista[j], self.lista[j+1] = self.lista[j+1], self.lista[j]
         return self.lista
 
@@ -21,4 +22,4 @@ if __name__ == "__main__":
     #Definimos vector como una instancia de la clase Lista
     resultado = Lista(vector)
     #Mostramos el resultado por pantalla
-    print (resultado.ordenacion_burbuja())
+    print ("El resultado tras la ordenacion es el siguiente: {}".format(resultado.ordenacion_burbuja()))
