@@ -29,4 +29,3 @@ if __name__ == "__main__":
     print("Tras aplicar la funcion explorar los segmentos quedan de la siguiente manera:")
     #Mostramos por pantalla los segmentos tras aplicar la funcion explorar
     print (resultado.explorar(resultado.segmentos()[0]), " - ", resultado.explorar(resultado.segmentos()[1]))
-    print ("\n")
