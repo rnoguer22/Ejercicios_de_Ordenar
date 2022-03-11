@@ -1,13 +1,16 @@
 if __name__ == "__main__":
 
-    from Clases.Insercion_dicotonomica import Dicotonomia
-    print ("Ejercicio 1:")
+    from Clases.Insercion_dicotonomica import Dicotonomia_1, Dicotonomia_2
+    print ("Apartado 1")
     tabla = [4,2,6,3,8,7,5,9,1,0]
     print (tabla)
     #Definimos nuestra unica instancia de clase
-    resultado = Dicotonomia(tabla)
-    print ("La tabla ordenada por dicotonomia es:")
-    resultado.ordenar()
+    resultado = Dicotonomia_1(tabla)
+    print ("La tabla ordenada por dicotonomia es: {}".format(resultado.ordenar()))
+
+    print("Apartado 2")
+    resultado_2 = Dicotonomia_2(tabla)
+    print ("Ordenando a partir de una lista vacia, la lista es: {}".format(resultado_2.ordenar_lista_vacia()))
     print ("\n")
 
     from Clases.Ordenacion_topologica import Lista
