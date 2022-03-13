@@ -34,14 +34,3 @@ class Segmento:
         segmento = segmento[1:] + segmento[:1]
         #Devolvemos el segmento ordenado
         return segmento
-
-if __name__ == "__main__":
-
-    vector = [5,7,3,-4,8,12,9,2,8]
-    #Definimos vector como unica instancia de la clase Segmento
-    resultado = Segmento(vector)
-    #Mostramos por pantalla los segmentos de "vector"
-    print ("Los segmentos de {} son: {}".format(vector, resultado.segmentos()))
-    print("Tras aplicar la funcion explorar los segmentos quedan de la siguiente manera:")
-    #Mostramos por pantalla los segmentos tras aplicar la funcion explorar
-    print (resultado.explorar(resultado.segmentos()[0]), " - ", resultado.explorar(resultado.segmentos()[1]))

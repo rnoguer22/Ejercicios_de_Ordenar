@@ -1,6 +1,7 @@
 if __name__ == "__main__":
 
     from Clases.Insercion_dicotonomica import Dicotonomia_1, Dicotonomia_2
+    print ("Ejercicio 1:")
     print ("Apartado 1")
     tabla = [4,2,6,3,8,7,5,9,1,0]
     print (tabla)
